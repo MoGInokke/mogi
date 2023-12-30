@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+    background-color: white;
+}
+
+html {
+    color: yellow;
+    overflow-x: hidden;
+}
+
+.start-video {
+    z-index: -1;
+    position: relative;
+}
+
+.start2:hover {
+    background: yellow;
+}
+
+.start span {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+    position: absolute;
+    top: -200px;
+    font-size: 50px;
+    animation: start_anime 1.5s forwards 8.5s;
+  }
+  
+  @keyframes start_anime {
+    0% {
+      transform: translateY(20px);
+    }
+     100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .start2 {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    animation: start_anime 1.5s forwards 9.5s;
+    font-size: 50px;
+  }
